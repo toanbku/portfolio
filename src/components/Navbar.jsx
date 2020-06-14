@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Pdf from "../editable-stuff/resume.pdf";
-import { showBlog, FirstName } from "../editable-stuff/configurations.json";
+// import Pdf from "../editable-stuff/resume.pdf";
+import { showBlog, LastName } from "../editable-stuff/configurations.json";
 
 const Navbar = (props) => {
   const [isTop, setIsTop] = useState(true);
@@ -21,7 +21,7 @@ const Navbar = (props) => {
       } `}
     >
       <a className="navbar-brand" href={process.env.PUBLIC_URL + "/#home"}>
-        {`<${FirstName} />`}
+        {`<${LastName} />`}
       </a>
       <button
         className="navbar-toggler"
@@ -58,7 +58,7 @@ const Navbar = (props) => {
           <li className="nav-item">
             <a
               className="nav-link lead"
-              href={Pdf}
+              // href={Pdf}
               target="_blank"
               rel="noreferrer noopener"
             >

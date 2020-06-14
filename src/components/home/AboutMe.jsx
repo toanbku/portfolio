@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Pdf from "../../editable-stuff/resume.pdf";
+// import Pdf from "../../editable-stuff/resume.pdf";
 import {
   aboutHeading,
   aboutDescription,
@@ -13,7 +13,7 @@ import {
 const AboutMe = () => {
   const [instaProfilePic, setInstaProfilePic] = useState("");
   const [showInsta, setShowInsta] = useState(showInstaProfilePic);
-  const [resumeURL] = useState(Pdf);
+  // const [resumeURL] = useState(Pdf);
 
   useEffect(() => {
     if (showInsta) {
@@ -57,11 +57,11 @@ const AboutMe = () => {
           <div className={`col-lg-${showInsta ? "7" : "12"}`}>
             <h1 className="display-4 mb-5 text-center">{aboutHeading}</h1>
             <p className="lead text-center">{aboutDescription}</p>
-            {resumeURL && (
+            {/* {resumeURL && (
               <p className="lead text-center">
                 <a
                   className="btn btn-outline-dark btn-lg"
-                  href={Pdf}
+                  // href={Pdf}
                   target="_blank"
                   rel="noreferrer noopener"
                   role="button"
@@ -70,7 +70,7 @@ const AboutMe = () => {
                   Resume
                 </a>
               </p>
-            )}
+            )} */}
           </div>
         </div>
       </div>
