@@ -71,7 +71,7 @@ class Dlut extends React.Component {
                     small={this.renderURL(item.key, item.vol)}
                     large={this.renderURL(item.key, item.vol)}
                     alt={item.key}
-                  />;
+                  />
                 </div>
               ))
             }
