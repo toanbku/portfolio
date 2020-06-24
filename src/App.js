@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { Blog } from "./components/blog/Blog";
 import BlogPost from "./components/blog/BlogPost";
+import Dlut from './components/minitool/dlut/Dlut';
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <MainBody />
       <AboutMe />
       <Project />
+      <Footer />
     </Fragment>
   );
 };
@@ -31,7 +33,7 @@ const App = () => (
     <Route path="/" exact component={Home} />
     {showBlog && <Route path="/blog" exact component={Blog} />}
     {showBlog && <Route path="/blog/:id" component={BlogPost} />}
-    <Footer />
+    <Route path="/dlut" exact component={Dlut} />
   </BrowserRouter>
 );
 
